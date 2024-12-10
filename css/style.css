@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'DrukFont';
+    src: url('/fonts/DrukWide-SuperItalic-Trial.woff') format('woff');
+  }
 
-
+h1 {
+    font-family: 'DrukFont';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 0; /* Fjerner den uønskede plads over */
+}
 
 body{
     background-image: url('/images/baggrund/rays.webp');
