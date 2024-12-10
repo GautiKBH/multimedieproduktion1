@@ -5,7 +5,7 @@
 
 h1 {
     font-family: 'DrukFont';
-    font-size: 40px;
+    font-size: 60px;
     color: white;
     text-align: center;
     margin: 0; /* Fjerner den uønskede plads over */
@@ -13,4 +13,59 @@ h1 {
 
 body{
     background-image: url('/images/baggrund/rays.webp');
+    margin: 0;
+    padding: 0;
 }
+
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    
+ }
+ 
+ header .navbar ul{
+    list-style: none;
+ }
+ 
+ header .navbar ul li{
+    position: relative;
+    float: left;
+ }
+ 
+ header .navbar ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    
+    color: white;
+    display: block;
+    padding: 10px 75px;
+ }
+ 
+ header .navbar ul li a:hover{
+    color: white;
+ }
+ 
+ header .navbar ul li ul{
+    position: absolute;
+    width: 400px;
+    display: none;
+ }
+ 
+ header .navbar ul li:focus-within > ul,
+ header .navbar ul li:hover > ul{
+    display: block;
+ }
+ 
+ #menu-bar{
+    display: none;
+ }
+ 
+ 
