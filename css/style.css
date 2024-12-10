@@ -28,7 +28,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 1rem;
-    
+    font-family: Impact;
  }
  
  header .navbar ul{
