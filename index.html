@@ -9,14 +9,24 @@
     <meta name="" content="">
     <meta name="" content="">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body>
-    <h1>Radar Rundt</h1>
-    <header> 
+    <article class="banner-container">
+        <img href="index.html" src="images/logo/logo.webp" alt="Logo" class="logo">
+        <h1><a href="index.html" class="rr">Radar Rundt</a></h1>
+        <form class="search-form" action="#" method="GET">
+            <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
+            <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
+        </form> 
+    </article>
+        <header> 
         <nav class="navbar">
             <ul>
                 <li><a href="#">Om Radar</a>
@@ -51,7 +61,18 @@
         </nav>
     </header>
     <main>
-
+        <article class="container">
+            <article class="content">
+                <h2>RADAR<br>SKAL<br>BLIVE!</h2>
+                <p>Radar har i over 20 år været en central del af Aarhus' musikscene med omkring 120 arrangementer om året. Fra januar 2025 mister vi vores status som regionalt spillested, hvilket skaber en usikker fremtid for os og byens musikmiljø.</p>
+                <p>Vi har brug for din hjælp til at sikre, at Radar fortsat kan være et hjem for vækstlaget, nichegenrer og unikke musikoplevelser. Din støtte gør en forskel – for os, for musikken og for Aarhus.</p>
+            </article>
+            <article class="buttons">
+                <button class="btn">BLIV FRIVILLIG</button>
+                <button class="btn">BLIV MEDLEM</button>
+                <button class="btn">DONER HER</button>
+            </article>
+        </article>
     </main>
     <footer>
         <article class="ikon-container">
@@ -61,19 +82,11 @@
           <a href="https://www.youtube.com/user/radarliverec" target="_blank"><img src="images/footer/youtube.webp" alt="YouTube"></a>
         </article>
         <article class="logo-container">
+          <img src="images/footer/tekst.webp" alt="kontakt">
           <a href="https://www.tuborgfondet.dk" target="_blank"><img src="images/footer/tuborg.webp" alt="Tuborg Fondet"></a>
           <a href="https://www.kunst.dk" target="_blank"><img src="images/footer/kunstfond.webp" alt="Statens Kunstfond"></a>
           <a href="https://www.aarhus.dk" target="_blank"><img src="images/footer/kommune.webp" alt="Aarhus Kommune"></a>
           <a href="https://godsbanen.dk" target="_blank"><img src="images/footer/godsbanen.webp" alt="Godsbanen"></a>
-        </article>
-        <article class="kontakt-info">
-          <p>Radar<br>
-          Karen Wegeners Gade 6<br>
-          DK 8000 Aarhus C<br>
-          Telefon +45 8676 0344</p>
-          <p>Kontakt<br>
-          Bookingforespørgster: booking@radarlive.dk<br>
-          Generel kontakt: kontakt@radarlive.dk</p>
         </article>
     </footer>
 </body>

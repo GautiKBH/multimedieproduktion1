@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'DrukFont';
     src: url('/fonts/DrukWide-SuperItalic-Trial.woff') format('woff');
-  }
+}
 
-h1 {
+
+.rr {
+    text-decoration: none;
+    color: white;
     font-family: 'DrukFont';
     font-size: 60px;
-    color: white;
     text-align: center;
     margin: 0; /* Fjerner den uønskede plads over */
 }
@@ -29,16 +31,16 @@ header{
     justify-content: center;
     height: 1rem;
     font-family: Impact;
- }
+}
  
  header .navbar ul{
     list-style: none;
- }
+}
  
  header .navbar ul li{
     position: relative;
     float: left;
- }
+}
  
  header .navbar ul li a {
     text-decoration: none;
@@ -47,25 +49,110 @@ header{
     color: white;
     display: block;
     padding: 10px 75px;
- }
+}
  
  header .navbar ul li a:hover{
     color: white;
- }
+}
  
  header .navbar ul li ul{
     position: absolute;
     width: 400px;
     display: none;
- }
+}
  
  header .navbar ul li:focus-within > ul,
  header .navbar ul li:hover > ul{
     display: block;
- }
+}
  
  #menu-bar{
     display: none;
- }
- 
- 
+}
+
+
+.banner-container {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-container .logo {
+    width: 8%; 
+    height: auto;
+    max-height: 6rem;
+    max-width: 6rem;
+    margin-left: 200px;
+}
+
+
+
+
+
+ footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    padding: 20px;
+    justify-content: center;
+}
+  
+  .ikon-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+  
+  .ikon-container img {
+    height: 40px;
+}
+  
+  .logo-container {
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+}
+  
+  .logo-container img { 
+    height: 100px;
+}
+  
+  .kontakt-info {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  img[alt="Godsbanen"] {
+    width: 150px;
+}
+
+
+
+
+    /* DESKTOP BREAKPOINT */
+@media (min-width:1025px) {
+
+}
+
+    /* TABLET BREAKPOINT */
+@media (max-width: 1024px) {
+    .logo {
+        display: none;
+    }
+    .search-form {
+        display: none;
+    }
+
+}
+
+
+    /* MOBILE BREAKPOINT */
+@media (max-width: 768px) {
+      .logo {
+          display: none;
+      }
+      .search-form {
+          display: none;
+      }
+}
