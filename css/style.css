@@ -175,6 +175,11 @@ img[alt="Godsbanen"] {
     /* DESKTOP BREAKPOINT */
     @media (min-width:1024px) {
 
+        h1 {
+            text-align: center;
+            justify-content: center;
+        }
+
         .burger-menu {
             display: none;
         }
@@ -206,12 +211,18 @@ img[alt="Godsbanen"] {
             width: 400px;
             background: black;
         }
+
+        
+
     }
 
 
     /* TABLET BREAKPOINT */
     @media (max-width: 1024px) {
-        .banner-container {
+  
+
+        h1 {
+            text-align: center;
             justify-content: center;
         }
 
@@ -255,7 +266,14 @@ img[alt="Godsbanen"] {
         }
     }
 
+ 
+
 @media (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+        justify-content: center;
+    }
 
     .banner-container {
         justify-content: center;
@@ -287,6 +305,7 @@ img[alt="Godsbanen"] {
 
 
 @media (max-width: 480px) {
+
 
     .banner-container {
         justify-content: center;

@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* fixer scrolling til siden */
+}
 body {
     font-family: 'Inter', sans-serif;
     color: white;
+    width: 100%; /* body tager 100% width */
 }
   
 .responsive-container {
@@ -16,6 +20,8 @@ body {
     padding: 50px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
 }
   
 /* de usynlige tekstbokse */
@@ -46,6 +52,7 @@ body {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 30px;
+        
     }
     
     /* sætter tekstbox nummer 2 over nummer 2 billede */
