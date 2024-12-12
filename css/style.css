@@ -149,8 +149,125 @@ img[alt="Godsbanen"] {
     width: 150px;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+    padding: 15px;
+}
+
+.burger-menu span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.25s;
+}
+
+    /* DESKTOP BREAKPOINT */
+    @media (min-width:1024px) {
+
+        .burger-menu {
+            display: none;
+        }
+    
+        .navbar {
+            display: block;
+        }
+    
+        header .navbar ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+    
+        header .navbar ul li {
+            float: left;
+        }
+    
+        header .navbar ul li a {
+            font-size: 25px;
+            padding: 10px 75px;
+            white-space: nowrap;
+        }
+    
+        header .navbar ul li ul {
+            position: absolute;
+            width: 400px;
+            background: black;
+        }
+    }
+
+
+    /* TABLET BREAKPOINT */
+    @media (max-width: 1024px) {
+        .banner-container {
+            justify-content: center;
+        }
+
+        .logo {
+            display: none;
+        }
+        .search-form {
+            display: none;
+        }
+        .burger-menu {
+            display: block;
+        }
+        .navbar {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(12, 0, 63, 0.8);
+            padding-top: 60px;
+        }
+    
+        header .navbar ul {
+            flex-direction: column;
+        }
+    
+        header .navbar ul li {
+            float: none;
+            width: 100%;
+        }
+    
+        header .navbar ul li ul {
+            position: static;
+            width: 100%;
+            background: #6C38F0;
+        }
+    
+        #menu-toggle:checked ~ .navbar {
+            display: block;
+        }
+    }
 
 @media (max-width: 768px) {
+
+    .banner-container {
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+    .search-form {
+        display: none;
+    }
+
     .ikon-container {
         gap: 30px; 
     }
@@ -170,6 +287,12 @@ img[alt="Godsbanen"] {
 
 
 @media (max-width: 480px) {
+
+    .banner-container {
+        justify-content: center;
+        
+    }
+
     .ikon-container {
         gap: 20px; /* mindre gap */
     }
@@ -189,34 +312,4 @@ img[alt="Godsbanen"] {
     .ikon-container img {
         height: 30px; /* mindre ikoner */
     }
-}
-
-
-
-
-    /* DESKTOP BREAKPOINT */
-@media (min-width:1025px) {
-
-}
-
-    /* TABLET BREAKPOINT */
-@media (max-width: 1024px) {
-    .logo {
-        display: none;
-    }
-    .search-form {
-        display: none;
-    }
-
-}
-
-
-    /* MOBILE BREAKPOINT */
-@media (max-width: 768px) {
-      .logo {
-          display: none;
-      }
-      .search-form {
-          display: none;
-      }
 }
