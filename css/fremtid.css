@@ -27,7 +27,7 @@ body {
 /* de usynlige tekstbokse */
 .text-box {
     font-family: 'Inter';
-    color: rgb(240, 212, 255);
+    color: white;
     padding: 20px;
     border-radius: 8px;
     text-align: justify;
@@ -71,10 +71,92 @@ body {
     .image-box {
         max-width: 40%;
     }
+    .nyhedsbrev h2 {
+        font-size: 36px;
+    }
+
+    .nyhedsbrev p {
+        font-size: 20px;
+    }
+
+    .signup-form {
+        width: 90%;
+    }
+
+
 }
 
 @media (max-width: 480px) {
     .image-box {
         max-width: 50%;
     }
+    .nyhedsbrev h2 {
+        font-size: 28px;
+    }
+
+    .nyhedsbrev p {
+        font-size: 16px;
+    }
 }
+
+
+
+
+.nyhedsbrev {
+    background-color: rgba(26, 0, 46, 0.7);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.nyhedsbrev h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.nyhedsbrev p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup-form input {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.signup-form button {
+    background-color: white;
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.signup-form button:hover {
+    background-color: #c3c3c3;
+}
+
+
