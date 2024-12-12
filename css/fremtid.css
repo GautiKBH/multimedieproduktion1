@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+  
+.responsive-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* de usynlige tekstbokse */
+.text-box {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+  
+.image-box {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+
+@media (max-width: 768px) {
+    .responsive-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    /* sætter tekstbox nummer 2 over nummer 2 billede */
+    .responsive-container > *:nth-child(3) {
+        order: 4;
+    }
+    .responsive-container > *:nth-child(4) {
+        order: 3;
+    }
+    
+    .text-box {
+        max-width: 50%;
+    }
+
+    .image-box {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-box {
+        max-width: 50%;
+    }
+}

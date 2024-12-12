@@ -33,3 +33,37 @@ p {
     margin-bottom: 1.5rem;
 }
 
+
+    /* DESKTOP BREAKPOINT */
+@media (min-width:1025px) {
+        
+}
+    
+/* DESKTOP OG TABLET BREAKPOINT */
+
+@media (min-width:769px) {
+    
+}
+
+        /* TABLET BREAKPOINT */
+@media (min-width:769px) (max-width: 1024px) {
+        .logo {
+            display: none;
+        }
+        .search-form {
+            display: none;
+        }
+    
+        
+}
+    
+    
+        /* MOBILE BREAKPOINT */
+@media (max-width: 768px) {
+          .logo {
+              display: none;
+          }
+          .search-form {
+              display: none;
+          }
+}
