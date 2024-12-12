@@ -107,40 +107,88 @@ header{
 
 
 
- footer {
+footer {
     background-color: black;
     color: white;
     display: grid;
     padding: 20px;
     justify-content: center;
+    gap: 30px; 
 }
-  
-  .ikon-container {
+
+.ikon-container {
     display: flex;
     gap: 50px;
     justify-content: center;
+    flex-wrap: wrap; /* ikonerne kommer på forskellige rækker når skærmen bliver mindre */
+    padding: 10px;
 }
-  
-  .ikon-container img {
+
+.ikon-container img {
     height: 40px;
 }
-  
-  .logo-container {
+
+.logo-container {
     display: flex;
-    gap: 70px;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap; /* logoerne kommer på forskellige rækker når skærmen bliver mindre */
+    padding: 10px;
 }
-  
-  .logo-container img { 
+
+.logo-container img { 
     height: 100px;
 }
-  
-  .kontakt-info {
+
+.kontakt-info {
     font-size: 14px;
     line-height: 1.5;
-  }
-  img[alt="Godsbanen"] {
+}
+
+img[alt="Godsbanen"] {
     width: 150px;
+}
+
+
+@media (max-width: 768px) {
+    .ikon-container {
+        gap: 30px; 
+    }
+    
+    .logo-container {
+        gap: 20px; /* Mindre gap */
+    }
+    
+    .logo-container img {
+        height: 80px; /* logoerne bliver mindre */
+    }
+    
+    img[alt="Godsbanen"] {
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .ikon-container {
+        gap: 20px; /* mindre gap */
+    }
+    
+    .logo-container {
+        gap: 15px;
+    }
+    
+    .logo-container img {
+        height: 60px; /* mindre logoer */
+    }
+    
+    img[alt="Godsbanen"] {
+        width: 90px;
+    }
+    
+    .ikon-container img {
+        height: 30px; /* mindre ikoner */
+    }
 }
 
 
