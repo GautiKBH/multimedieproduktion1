@@ -14,15 +14,29 @@ main {
 
 /* RADAR SKAL BLIVE */
 .rsb-container {
-    
+    background-color: rgb(18, 18, 47);
+    margin-left: 5rem;
+    margin-right: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
-.rsb-indhold {
-
+.rsb-container p {
+    width: 90%;
+    margin-left: 1rem;
+    font-family: 'Inter',sans-serif;
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
+.rsb-container h2 {
+    font-size: 5rem;
+    font-family: 'DrukFont',sans-serif;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}
 
- 
 .f-btn {
     background-color: white;
     width: 8rem;
@@ -32,9 +46,10 @@ main {
     font-family: 'Inter';
     font-style: Italic;
     border-radius: 25px;
-    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 .f-btn:hover {
 background-color: #c3c3c3;
