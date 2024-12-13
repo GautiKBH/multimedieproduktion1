@@ -71,7 +71,9 @@ main {
 }
 
 .koncerter button {
-
+    background-color: white;
+    width: 8rem;
+    font-size: 1.25rem;
 }
 
 
