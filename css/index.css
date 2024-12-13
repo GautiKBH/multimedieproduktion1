@@ -83,17 +83,36 @@ background-color: #c3c3c3;
     justify-content: center;
 }
 
-.anne-roemer {
+.billet-info p {
+    margin-left: 1rem;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.25rem;
 
 }
 
-.baryl {
-
+.anne-roemer h2 {
+    font-family: 'DrukFont',sans-serif;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    margin-top: 5rem;
 }
 
-.aarhus-drag {
 
+.baryl h2 {
+    font-family: 'DrukFont',sans-serif;
+    font-size: 2rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem;
 }
+
+
+.aarhus-drag h2 {
+    font-family: 'DrukFont',sans-serif;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+}
+
 
 .koncerter button {
     background-color: white;
