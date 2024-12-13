@@ -6,37 +6,28 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 2 2fr;
+    grid-template-columns: 2fr 2fr;
+    overflow: hidden;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    position: relative;
-    min-height: 100vh;
+.koncerter img {
+    width: 30rem;
 }
 
-.content {
-    max-width: 800px;
+
+.crowdfunding-workshop img {
+    width: 30rem;
 }
 
-h2 {
-    font size: 5rem;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: -2px;
+
+
+.fremtid img {
+    width: 30rem;
 }
 
-p {
-    font size: 1.25rem;
-    font-style: italic;
-    line-height:1.5;
-    margin-bottom: 1.5rem;
-}
+
+
+
 
 
 
