@@ -65,11 +65,11 @@ body {
     }
     
     .text-box {
-        max-width: 50%;
+        max-width: 80%;
     }
 
     .image-box {
-        max-width: 40%;
+        max-width: 60%;
     }
     .nyhedsbrev h2 {
         font-size: 36px;
