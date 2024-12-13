@@ -22,10 +22,19 @@ main {
 }
 
 
+ 
 .f-btn {
     background-color: white;
     width: 8rem;
     font-size: 1.25rem;
+    padding: 0.5rem;
+    border: none;
+    font-family: 'Inter';
+    font-style: Italic;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
 }
 .f-btn:hover {
 background-color: #c3c3c3;
@@ -75,11 +84,21 @@ background-color: #c3c3c3;
     background-color: white;
     width: 8rem;
     font-size: 1.25rem;
+    border: none;
+    font-family: 'Inter';
+    font-style: Italic;
+    border-radius: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .koncerter button:hover {
     background-color: #c3c3c3;
 }
+
+
+
 
 /* ARTIKEL KASSE 1 */
 
