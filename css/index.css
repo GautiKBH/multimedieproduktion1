@@ -10,22 +10,83 @@ main {
     overflow: hidden;
 }
 
+
+
+/* RADAR SKAL BLIVE */
+.rsb-container {
+    
+}
+
+.rsb-indhold {
+
+}
+
+.f-buttons {
+
+}
+
+.f-btn {
+
+}
+
+
+
+/* KONCERTER */
+
+.annebox {
+    display: flex;
+    gap: 1rem;
+}
+
+.barylbox {
+    display: flex;
+    gap: 1rem;
+}
+
+.dragbox {
+    display: flex;
+    gap: 1rem;
+}
+
 .koncerter img {
     width: 30rem;
 }
 
+.billet-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.anne-roemer {
+
+}
+
+.baryl {
+
+}
+
+.aarhus-drag {
+
+}
+
+.koncerter button {
+
+}
+
+
+/* ARTIKEL KASSE 1 */
 
 .crowdfunding-workshop img {
     width: 30rem;
 }
 
 
+/* ARTIKEL KASSE 2 */
 
 .fremtid img {
     width: 30rem;
 }
-
-
 
 
 
