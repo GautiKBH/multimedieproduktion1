@@ -21,14 +21,15 @@ main {
 
 }
 
-.f-buttons {
-
-}
 
 .f-btn {
-
+    background-color: white;
+    width: 8rem;
+    font-size: 1.25rem;
 }
-
+.f-btn:hover {
+background-color: #c3c3c3;
+}
 
 
 /* KONCERTER */
@@ -76,6 +77,9 @@ main {
     font-size: 1.25rem;
 }
 
+.koncerter button:hover {
+    background-color: #c3c3c3;
+}
 
 /* ARTIKEL KASSE 1 */
 
