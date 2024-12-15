@@ -136,15 +136,29 @@ background-color: #c3c3c3;
 
 /* ARTIKEL KASSE 1 */
 
-.crowdfunding-workshop img {
-    width: 30rem;
+.crowdfunding-workshop {
+    font-family: 'DrukFont',sans-serif;
+    font-style: italic;
+    margin-left: 5rem;
+    margin-right: 3rem;
 }
 
+.crowdfunding-workshop img {
+    width: 100%
+}
 
 /* ARTIKEL KASSE 2 */
 
+.fremtid {
+    font-family: 'DrukFont',sans-serif;
+    font-style: italic;
+    margin-left: 5rem;
+    margin-right: 3rem;
+}
+
+
 .fremtid img {
-    width: 30rem;
+    width: 100%;
 }
 
 
@@ -217,6 +231,10 @@ background-color: #c3c3c3;
 @media (min-width:1025px) {
         
 }
+
+
+
+
     
 /* DESKTOP OG TABLET BREAKPOINT */
 
