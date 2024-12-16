@@ -70,12 +70,61 @@
         <h2>CROWDFUNDING</h2>
         
         <section class="responsive-container">
-            <div class="text-box"></div>
-            <div class="image-box"><img src="images/crowdfunding/crowdfunding.webp" alt="Image 1"></div>
+            <article class="text-box"></article>
+            <article class="image-box"><img src="images/crowdfunding/crowdfunding.webp" alt="Image 1"></article>
         </section>
 
-        <section>
+        <section class="donation-boks">
+            <h3>STØT RADAR NU</h3>
             
+            <form class="donation-form">
+                <!-- valg af donationsmængde -->
+                <article class="donation-tal">
+                    <label class="knap-container">
+                        <input type="checkbox" name="antal" value="25">
+                        <span class="tal">25 DKK</span>
+                    </label>
+                    
+                    <label class="knap-container">
+                        <input type="checkbox" name="antal" value="50">
+                        <span class="tal">50 DKK</span>
+                    </label>
+                    
+                    <label class="knap-container">
+                        <input type="checkbox" name="antal" value="100">
+                        <span class="tal">100 DKK</span>
+                    </label>
+                    
+                    <label class="knap-container">
+                        <input type="checkbox" name="antal" value="andet">
+                        <span class="tal">Andet</span>
+                    </label>
+                </article>
+        
+                <!-- kontakt info -->
+                <article class="kontakt-info">
+                    <input type="tekst" placeholder="Navn" required>
+                    <input type="tlf" placeholder="Telefonnummer" required>
+                    <input type="email" placeholder="E-mail" required>
+                </article>
+        
+                <!-- vælg betalingsmetode -->
+                <article class="betaling-metode">
+                    <h3>Vælg betalingsmetode</h3>
+                    
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="betaling" value="kort">
+                        <span class="checkbox-b">Betalingskort</span>
+                    </label>
+                    
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="betaling" value="mobilepay" checked>
+                        <span class="checkbox-b">Mobilepay</span>
+                    </label>
+                </article>
+        
+                <button type="nu" class="nu-knap">Støt Nu</button>
+            </form>
         </section>
 
         <section class="nyhedsbrev">
