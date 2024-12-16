@@ -12,7 +12,17 @@ body {
     color: white;
     width: 100%; /* body tager 100% width */
 }
-  
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto; 
+}
+
 h2 {
     text-align: center;
     margin-top: 5rem;
@@ -20,12 +30,42 @@ h2 {
     font-size: 3rem;
 }
 
+/* tekstboksen */
 
-
-
-.donation-boks {
-    max-width: 25rem;
+.tekst-box {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: 'Inter';
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 18px;
+    max-width: 100%;
     margin: 0 auto;
+    line-height: 2rem;
+}
+
+
+/* billedeboksen */
+.image-box {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* støtteboksen */
+.donation-boks {    
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 100%;
+    margin: 0;
     padding: 2rem;
 }
 
@@ -98,12 +138,62 @@ h2 {
 
 
 
+/* crowdfundboksen */
+.crowdfund-grafik {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
 
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .info h4 {
+    font-family: 'DrukFont',sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+ }
+ 
+ .info p {
+    font-size: 1.25rem;
+ }
+ 
+ .linje {
+    width: 0.25rem;
+    height: 3rem;
+    background-color: white;
+ }
+ 
+ .fremskridt-grafik {
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+ }
+ 
+ .fremskridt {
+    width: 38.2%;
+    height: 100%;
+    background-color: #A8C7FF;
+ }
+ 
+ .fremskridt-tekst {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+ }
 
-
-
-
-
+ .formål-info {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+ }
 
 
 
@@ -163,4 +253,148 @@ h2 {
 
 .signup-form button:hover {
     background-color: #c3c3c3;
+}
+
+
+
+/* TABLET BREAKPOINT */
+@media (max-width: 1024px) {
+    main {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .tekst-box {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .donation-boks h3 {
+        font-size: 2rem;
+    }
+
+    .info h4 {
+        font-size: 1.75em;
+        padding: 0.75rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* MOBIL BREAKPOINT */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Sætter dem i rækkefølge for mobil */
+    .tekst-box {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .image-box {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .donation-boks {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .crowdfund-grafik {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .donation-boks h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .linje {
+        display: none; /* fjerner linjerne imellem på mobilen */
+    }
+
+    .fremskridt-tekst {
+        font-size: 1.1rem;
+    }
+
+    .nyhedsbrev h2 {
+        font-size: 36px;
+    }
+}
+
+/* MEGET SMÅ MOBILER BREAKPOINT */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .tekst-box {
+        font-size: 14px;
+        line-height: 1.6rem;
+        padding: 15px;
+    }
+
+    .donation-tal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .donation-boks h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .kontakt-info input,
+    .nu-knap {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .info h4 {
+        font-size: 1.5em;
+        padding: 0.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .fremskridt-tekst {
+        font-size: 1rem;
+    }
+
+    .nyhedsbrev h2 {
+        font-size: 22px;
+    }
+
+    .nyhedsbrev p {
+        font-size: 18px;
+    }
+
+    .signup-form input,
+    .signup-form button {
+        padding: 12px;
+        font-size: 16px;
+    }
 }

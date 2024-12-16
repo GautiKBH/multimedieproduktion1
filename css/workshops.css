@@ -114,8 +114,12 @@ h2 {
     background-color: #c3c3c3;
 }
 
+/* TABLET BREAKPOINT */
+@media (max-width: 1024px) {
 
+}
 
+/* MOBIL BREAKPOINT */
 @media (max-width: 768px) {
     .responsive-container {
         grid-template-columns: 1fr;
@@ -157,7 +161,7 @@ h2 {
 
 
 }
-
+/* MEGET SMÅ MOBILER BREAKPOINT */
 @media (max-width: 480px) {
     .image-box {
         max-width: 50%;

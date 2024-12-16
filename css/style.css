@@ -271,7 +271,7 @@ img[alt="Godsbanen"] {
     }
 
  
-
+ /* MOBIL BREAKPOINT */
 @media (max-width: 768px) {
 
     .rr {
@@ -312,6 +312,7 @@ img[alt="Godsbanen"] {
 }
 
 
+/* MEGET SMÅ MOBILER BREAKPOINT */
 @media (max-width: 480px) {
 
     .rr {
