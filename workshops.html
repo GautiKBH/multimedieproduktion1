@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radar Rundt</title>
+    <title>Workshops</title>
 
     <meta name="" content="">
     <meta name="" content="">
@@ -14,19 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fremtid.css">
 
 </head>
 <body>
-    <article class="banner-container">
-        <img href="index.html" src="images/logo/logo.webp" alt="Logo" class="logo">
-        <h1><a href="index.html" class="rr">Radar Rundt</a></h1>
-        <form class="search-form" action="#" method="GET">
-            <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
-            <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
-        </form> 
-    </article>
-        <header> 
+    <header>
+        <article class="banner-container">
+            <img href="index.html" src="images/logo/logo.webp" alt="Logo" class="logo">
+            <h1><a href="index.html" class="rr">Radar Rundt</a></h1>
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
+                <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
+            </form> 
+        </article>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         <nav class="navbar">
             <ul>
                 <li><a href="#">Om Radar</a>
@@ -61,6 +67,24 @@
         </nav>
     </header>
     <main>
+        <h2>WORKSHOPS</h2>
+        
+        <section class="responsive-container">
+            <div class="text-box"></div>
+            <div class="image-box"><img src="images/workshops/workshops1.webp" alt="Image 1"></div>
+            
+            <div class="image-box"><img src="images/workshops/workshops2.webp" alt="Image 2"></div>
+            <div class="text-box"></div>
+        </section>
+
+        <section class="nyhedsbrev">
+            <h2>NYHEDSBREV</h2>
+            <p>Modtag nyheder om kommende koncerter, arrangementer og events.</p>
+            <form class="signup-form">
+                <input type="email" placeholder="EMAIL" required>
+                <button type="tilmeld">TILMELD</button>
+            </form>
+        </section>
 
     </main>
     <footer>
