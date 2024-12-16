@@ -225,6 +225,38 @@ background-color: #c3c3c3;
 
 
 
+@media (max-width: 1245px) {
+/* Koncerter */
+.koncerter img {
+    width: 25rem;
+}
+
+}
+
+@media (max-width: 1180px) {
+    .koncerter img {
+        width: 21rem;
+    }
+}
+@media (max-width: 1100px) {
+    .koncerter img {
+        width: 20rem;
+    }
+    .anne-roemer h2, .baryl h2, .aarhus-drag h2 {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .billet-info p {
+        font-size: 1rem;
+    }
+
+    .koncerter button {
+        font-size: 1.2rem;
+        width: 6rem;
+    }
+}
 
 
     /* TABLET BREAKPOINT */
