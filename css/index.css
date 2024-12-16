@@ -1,3 +1,4 @@
+
 body {
     color: white;
     font-family: 'Inter', sans-serif;
@@ -227,39 +228,140 @@ background-color: #c3c3c3;
 
 
 
-    /* DESKTOP BREAKPOINT */
-@media (min-width:1025px) {
-        
-}
-
-
-
-
-    
-/* DESKTOP OG TABLET BREAKPOINT */
-
-@media (min-width:769px) {
-    
-}
-
         /* TABLET BREAKPOINT */
-@media (min-width:769px) (max-width: 1024px) {
+@media (max-width: 1024px) {
         .logo {
             display: none;
         }
         .search-form {
             display: none;
         }
+
+
+        main {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* RSB */
+
+        .rsb-container {
+            margin: 2rem 1rem;
+        }
+
+
+        .rsb-container h2 {
+            font-size: 3.5rem;
+            margin-left: 1.5rem;
+        }
+
+        .rsb-container p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        /* Koncerter */
+        .koncerter img {
+            width: 20rem;
+        }
+
+        .anne-roemer h2, .baryl h2, .aarhus-drag h2 {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            margin-top: 2rem;
+        }
+
+        .billet-info p {
+            font-size: 1rem;
+        }
+
+        .koncerter button {
+            font-size: 1.2rem;
+            width: 6rem;
+        }
          
 }
     
     
-        /* MOBILE BREAKPOINT */
+        /* MOBIL BREAKPOINT */
 @media (max-width: 768px) {
-          .logo {
-              display: none;
-          }
-          .search-form {
-              display: none;
-          }
+        .logo {
+            display: none;
+        }
+        .search-form {
+            display: none;
+        }
+
+        main {
+            grid-template-columns: 1fr; /* bliver til 1 column */
+        }
+    
+        /* RSB */
+        .rsb-container {
+            margin: 1rem;
+        }
+    
+        .rsb-container h2 {
+            font-size: 3rem;
+            margin-left: 1rem;
+            text-align: center;
+        }
+    
+        .rsb-container p {
+            width: 95%;
+            margin: 1rem auto;
+            text-align: center;
+        }
+    
+        .allebtn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        /* Koncerter */
+        .annebox, .barylbox, .dragbox {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    
+        .koncerter img {
+            width: 100%;
+            max-width: 25rem;
+        }
+    
+        .billet-info {
+            display: none;
+        }
+    
+        .anne-roemer h2, .baryl h2, .aarhus-drag h2 {
+            margin: 1rem 0;
+            text-align: center;
+        }
+    
+        /* Undersider links */
+        .crowdfunding-workshop, .fremtid {
+            margin: 1rem;
+        }
+    
+        /* nyhedsbrev */
+        .nyhedsbrev h2 {
+            font-size: 2rem;
+        }
+    
+        .nyhedsbrev p {
+            font-size: 1rem;
+        }
+    
+        .signup-form input {
+            width: 80%;
+        }
+
+        .signup-form button {
+            width: 50%;
+            justify-content: center;
+            margin-left: 5rem;
+        }
 }
+

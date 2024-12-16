@@ -274,6 +274,10 @@ img[alt="Godsbanen"] {
 
 @media (max-width: 768px) {
 
+    .rr {
+        font-size: 3rem;
+    }
+
     h1 {
         text-align: center;
         justify-content: center;
@@ -310,6 +314,9 @@ img[alt="Godsbanen"] {
 
 @media (max-width: 480px) {
 
+    .rr {
+        font-size: 3rem;
+    }
 
     .banner-container {
         justify-content: center;
