@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da"> <!-- sætter sproget til dansk på dokumentet -->
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +22,37 @@
 </head>
 <body>
     <header>
-            <article class="banner-container">
-                <img href="index.html" src="images/logo/logo.webp" alt="Logo" class="logo">
-                <h1><a href="index.html" class="rr">Radar Rundt</a></h1>
-                <form class="search-form" action="#" method="GET">
-                    <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
-                    <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
-                </form> 
-            </article>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <!-- banner-container med logo og banner/hovedoverskrift -->
+        <article class="banner-container">
+            <!-- logo der linker til forsiden -->
+            <a class="logo" href="index.html">
+                <img src="images/logo/logo.webp" alt="Logo">
+            </a>
+            <!-- hovedoverskrift med link til forsiden -->
+            <h1><a href="index.html" class="rr">Radar Rundt</a></h1>
+            
+            <!-- søgeformular til hjemmesiden -->
+            <form class="search-form" action="#" method="GET">
+                <!-- inputfelt til søgning med placeholder-tekst: "søg..." -->
+                <input type="text" placeholder="Søg..." name="search" class="search-input"> <!-- SØGEFELT -->
+                <!-- selve knappen til at klikke søg -->
+                <button type="submit" class="search-button">🔍</button> <!-- SØGEKNAP -->
+            </form>
+        </article>
+        
+        <!-- menu-toggle checkbox for min burger-menu -->
+        <input type="checkbox" id="menu-toggle">
+        <!-- label for min burger-menu toggle -->
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <!-- navigation menu herunde -->
         <nav class="navbar">
             <ul>
+                <!-- menupunkt for Om Radar med undermenu -->
                 <li><a href="#">Om Radar</a>
                     <ul>
                         <li><a href="fremtid.html">Fremtid og Vision</a></li>
@@ -45,6 +60,7 @@
                         <li><a href="index.html">Overblik</a></li>
                     </ul>
                 </li>
+                <!-- menupunkt for Koncerter med undermenu -->
                 <li><a href="#">Koncerter</a>
                     <ul>
                         <li><a href="index.html">Kalender</a></li>
@@ -52,13 +68,15 @@
                         <li><a href="index.html">Konkurrencer</a></li>
                     </ul>
                 </li>
+                <!-- menupunkt for Støt med undermenu -->
                 <li><a href="#">Støt</a>
                     <ul>
                         <li><a href="crowdfunding.html">Crowdfunding</a></li>
-                        <li><a href="index.html">Frivilighed</a></li>
+                        <li><a href="index.html">Frivillighed</a></li>
                         <li><a href="index.html">Bliv medlem</a></li>
                     </ul>
                 </li>
+                <!-- menupunkt for Bag Scenen med undermenu -->
                 <li><a href="#">Bag Scenen</a>
                     <ul>
                         <li><a href="workshops.html">Workshops</a></li>
@@ -69,110 +87,136 @@
             </ul>
         </nav>
     </header>
+    
     <main>
 
-
-
+        <!-- sektion for Radar Skal Blive -->
         <section class="rsb-container">
             <article class="rsb-indhold">
+                <!-- overskriften -->
                 <h2>RADAR<br>SKAL<br>BLIVE!</h2>
+                <!-- beskrivelse af problem -->
                 <p>Radar har i over 20 år været en central del af Aarhus' musikscene med omkring 120 arrangementer om året. Fra januar 2025 mister vi vores status som regionalt spillested, hvilket skaber en usikker fremtid for os og byens musikmiljø.</p>
                 <p>Vi har brug for din hjælp til at sikre, at Radar fortsat kan være et hjem for vækstlaget, nichegenrer og unikke musikoplevelser. Din støtte gør en forskel – for os, for musikken og for Aarhus.</p>
             </article>
             <article class="allebtn">
-                <button class="f-btn">BLIV FRIVILLIG</button>
-                <a href=""><button class="f-btn">BLIV MEDLEM</button></a>
-                <a href="crowdfunding.html"><button class="f-btn">DONER HER</button></a>
+                <!-- knapper for frivillig, medlemskab og donation. donation link føre til undersiden med støtteboksen -->
+                <a href="#" class="f-a">BLIV FRIVILLIG</a>
+                <a href="#" class="f-a">BLIV MEDLEM</a>
+                <a href="crowdfunding.html" class="f-a">DONER HER</a>
             </article>
         </section>
-
-
-
-
+    
+        <!-- sektion for kommende koncerter -->
         <section class="koncerter">
             <article class="annebox">
+                <!-- dato, dag og købsknap for Anne Roemer koncerten -->
                 <article class="billet-info">
                     <p>Onsdag</p>
                     <p>29.01.2025</p>
-                    <a href="https://www.yourticket.dk/?ytroute=/arrangementer/40976/anna-roemer-radar-aarhus/" target="_blank"><button>Køb Billet</button></a>
+                    <a href="https://www.yourticket.dk/?ytroute=/arrangementer/40976/anna-roemer-radar-aarhus/" target="_blank">Køb Billet</a>
                 </article>
+                <!-- Anne Roemer skrift og billede -->
                 <article class="anne-roemer">
                     <h2>ANNE ROEMER</h2>
                     <img src="images/forside/anne.webp" alt="Anne Roemer">
                 </article>
             </article>
             <article class="barylbox"> 
+                <!-- dato, dag og købsknap for Baryl koncerten -->
                 <article class="billet-info">
                     <p>Fredag</p>
                     <p>31.01.2025</p>
-                    <a href="https://www.yourticket.dk/?ytroute=/arrangementer/42082/baryl-radar-aarhus/" target="_blank"><button>Køb Billet</button></a>
+                    <a href="https://www.yourticket.dk/?ytroute=/arrangementer/42082/baryl-radar-aarhus/" target="_blank">Køb Billet</a>
                 </article>
+                <!-- Baryl skrift og billede -->
                 <article class="baryl">
                     <h2>BARYL</h2>
                     <img src="images/forside/baryl.webp" alt="Baryl">
                 </article>
             </article>
             <article class="dragbox">
+                <!-- dato, dag og købsknap for Aarhus Drag -->
                 <article class="billet-info">
                     <p>Lørdag</p>
                     <p>01.02.2025</p>
-                    <a href="https://www.yourticket.dk/?ytroute=/arrangementer/40386/aarhus-drag-extravaganza/" target="_blank"><button>Køb Billet</button></a>
+                    <a href="https://www.yourticket.dk/?ytroute=/arrangementer/40386/aarhus-drag-extravaganza/" target="_blank">Køb Billet</a>
                 </article>
+                <!-- Aarhus Drag skrift og billede -->
                 <article class="aarhus-drag">
                     <h2>AARHUS DRAG</h2>
                     <img src="images/forside/drag.webp" alt="Aarhus Drag">
                 </article>
             </article>
         </section>
-
-
-
-
+    
+        <!-- sektion for crowdfunding og workshops billede der linker til undersiden -->
         <section class="crowdfunding-workshop">
             <article>
+                <!-- link til crowdfunding-siden med billede -->
                 <h2>Crowdfunding</h2>
                 <a href="crowdfunding.html"><img src="images/forside/lyd.webp" alt="Crowdfunding Billede"></a>
             </article>
             <article>
+                <!-- link til workshops-siden med billede -->
                 <h2>Workshops</h2>
                 <a href="workshops.html"><img src="images/forside/dj.webp" alt="Workshops Billede"></a>
             </article>
         </section>
-
-
-
+    
+        <!-- sektion for fremtid og vision med link til undersiden -->
         <section class="fremtid">
             <article>
                 <h2>Fremtid Og Vision</h2>
                 <a href="fremtid.html"><img src="images/forside/bygning.webp" alt="Fremtid Og Vision Billede"></a>
             </article>
         </section>
-
-
-
+    
     </main>
+    
+
+
     <section class="nyhedsbrev">
+        <!-- sektion for tilmelding til nyhedsbrev -->
         <h2>NYHEDSBREV</h2>
         <p>Modtag nyheder om kommende koncerter, arrangementer og events.</p>
+        <!-- 2 funktioner til nyhedsbrevet -->
         <form class="signup-form">
+            <!-- indtaste email-adresse -->
             <input type="email" placeholder="EMAIL" required>
-            <button type="tilmeld">TILMELD</button>
+            <!-- indsende og tilmelde sig -->
+            <button type="submit">TILMELD</button>
         </form>
     </section>
+    
     <footer>
+        <!-- sektion for sociale medie ikoner der linker til Radars profiler. -->
         <article class="ikon-container">
-          <a href="https://www.facebook.com/radarlive" target="_blank"><img src="images/footer/facebook.webp" alt="Facebook"></a>
-          <a href="https://open.spotify.com/user/radarlive" target="_blank"><img src="images/footer/spotify.webp" alt="Spotify"></a>
-          <a href="https://www.instagram.com/radarlive/" target="_blank"><img src="images/footer/insta.webp" alt="Instagram"></a>
-          <a href="https://www.youtube.com/user/radarliverec" target="_blank"><img src="images/footer/youtube.webp" alt="YouTube"></a>
+            <!-- link til Facebook med et klik på ikon -->
+            <a href="https://www.facebook.com/radarlive" target="_blank"><img src="images/footer/facebook.webp" alt="Facebook"></a>
+            <!-- link til Spotify med et klik på ikon -->
+            <a href="https://open.spotify.com/user/radarlive" target="_blank"><img src="images/footer/spotify.webp" alt="Spotify"></a>
+            <!-- link til Instagram med et klik på ikon -->
+            <a href="https://www.instagram.com/radarlive/" target="_blank"><img src="images/footer/insta.webp" alt="Instagram"></a>
+            <!-- link til YouTube med et klik på ikon -->
+            <a href="https://www.youtube.com/user/radarliverec" target="_blank"><img src="images/footer/youtube.webp" alt="YouTube"></a>
         </article>
+        
+        <!-- sektion for samarbejdspartnere -->
         <article class="logo-container">
-          <img src="images/footer/tekst.webp" alt="kontakt">
-          <a href="https://www.tuborgfondet.dk" target="_blank"><img src="images/footer/tuborg.webp" alt="Tuborg Fondet"></a>
-          <a href="https://www.kunst.dk" target="_blank"><img src="images/footer/kunstfond.webp" alt="Statens Kunstfond"></a>
-          <a href="https://www.aarhus.dk" target="_blank"><img src="images/footer/kommune.webp" alt="Aarhus Kommune"></a>
-          <a href="https://godsbanen.dk" target="_blank"><img src="images/footer/godsbanen.webp" alt="Godsbanen"></a>
+            <!-- billede for kontaktinfo -->
+            <img src="images/footer/tekst.webp" alt="kontakt">
+            <!-- link til Tuborg Fondet med deres logo -->
+            <a href="https://www.tuborgfondet.dk" target="_blank"><img src="images/footer/tuborg.webp" alt="Tuborg Fondet"></a>
+            <!-- link til Statens Kunstfond med deres logo -->
+            <a href="https://www.kunst.dk" target="_blank"><img src="images/footer/kunstfond.webp" alt="Statens Kunstfond"></a>
+            <!-- link til Aarhus Kommune med deres logo -->
+            <a href="https://www.aarhus.dk" target="_blank"><img src="images/footer/kommune.webp" alt="Aarhus Kommune"></a>
+            <!-- link til Godsbanen med deres logo -->
+            <a href="https://godsbanen.dk" target="_blank"><img src="images/footer/godsbanen.webp" alt="Godsbanen"></a>
         </article>
     </footer>
-</body>
-</html>
+    
+    </body>
+    </html>
+    

@@ -1,19 +1,21 @@
 
+/* overordnet styling for body */
 body {
     color: white;
     font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; /* sikrer at padding og borderen bliver inkluderet i elementernes samlede bredde og højde */
 }
 
+/* grid layout til min main sektion, opdeler siden i to kolonner så indholdet passer */
 main {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    overflow: hidden;
+    grid-template-columns: 2fr 2fr; /* laver to lige kolonner der fylder det samme */
+    overflow: hidden; /* skjuler det der går ud over containerens grænser. Godt så vi ikke behøver at scrolle men det bliver altså i stedet */
 }
 
 
 
-/* RADAR SKAL BLIVE */
+/* RADAR SKAL BLIVE container, styling af boks med teksten og overskriften */
 .rsb-container {
     background-color: rgb(18, 18, 47);
     margin-left: 5rem;
@@ -22,54 +24,53 @@ main {
     margin-bottom: 3rem;
 }
 
+
 .rsb-container p {
     width: 90%;
     margin-left: 1rem;
     font-family: 'Inter',sans-serif;
-    text-align: justify;
+    text-align: justify; /* justerer teksten så den er lige/firkantet. Ser mere formelt ud og passer godt til containeren */
     font-size: 1.25rem;
     line-height: 2rem;
 }
 
 .rsb-container h2 {
     font-size: 5rem;
-    font-family: 'DrukFont',sans-serif;
+    font-family: 'DrukFont',sans-serif; /* bruger en mere karakteristisk font til overskrifter */
     margin-left: 2.5rem;
     margin-top: 1rem;
 }
 
-.f-btn {
+
+/* styling for knapperne i rsb containeren */
+.f-a {
     background-color: white;
-    width: 8rem;
+    width: 30%;
     font-size: 1.25rem;
     padding: 0.5rem;
     border: none;
     font-family: 'Inter';
     font-style: Italic;
-    border-radius: 25px;
+    border-radius: 25px; /* gør hjørnerne runde så de ser bedere ud på kassen */
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 1rem;
     margin-left: 1rem;
-}
-.f-btn:hover {
-background-color: #c3c3c3;
+    text-decoration: none;
 }
 
-
-/* KONCERTER */
-
-.annebox {
-    display: flex;
-    gap: 1rem;
+.f-a:hover { /* gør vores knapper har en hover effekt */
+    background-color: #c3c3c3; /* farven på hover effekt */
 }
 
-.barylbox {
-    display: flex;
-    gap: 1rem;
+.f-a:visited { /* gør at den lilla farve som der er på et a tag med link kan ændres, her har jeg ændret den til sort. */
+    color: black;
 }
 
-.dragbox {
+/* KONCERTER herunder */
+
+/* flexbox layout for koncertsektionen - gør det nemt at justere koncertbillederne og infoen */
+.annebox, .barylbox, .dragbox {
     display: flex;
     gap: 1rem;
 }
@@ -80,8 +81,8 @@ background-color: #c3c3c3;
 
 .billet-info {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /* infoen bliver vertikalt opstillet */
+    justify-content: center; /* centrerer mit indhold */
 }
 
 .billet-info p {
@@ -115,7 +116,7 @@ background-color: #c3c3c3;
 }
 
 
-.koncerter button {
+.koncerter a {
     background-color: white;
     width: 8rem;
     font-size: 1.25rem;
@@ -126,9 +127,15 @@ background-color: #c3c3c3;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
-.koncerter button:hover {
+.koncerter a:visited {
+    color: black;
+}
+
+.koncerter a:hover {
     background-color: #c3c3c3;
 }
 
@@ -224,13 +231,12 @@ background-color: #c3c3c3;
 }
 
 
-
+/* mindre skærme så vi skal derfor ændre størrelsen på billedet så det passer og er responsivt */ 
 @media (max-width: 1245px) {
-/* Koncerter */
-.koncerter img {
-    width: 25rem;
-}
 
+    .koncerter img {
+        width: 25rem;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -238,6 +244,7 @@ background-color: #c3c3c3;
         width: 21rem;
     }
 }
+/* her ændre vi også størelse af font og placering/plads ved hjælp margin */
 @media (max-width: 1100px) {
     .koncerter img {
         width: 20rem;
@@ -252,7 +259,7 @@ background-color: #c3c3c3;
         font-size: 1rem;
     }
 
-    .koncerter button {
+    .koncerter a {
         font-size: 1.2rem;
         width: 6rem;
     }
@@ -262,15 +269,14 @@ background-color: #c3c3c3;
     /* TABLET BREAKPOINT */
 @media (max-width: 1024px) {
         .logo {
-            display: none;
+            display: none; /* skjuler logo på tablet */
         }
         .search-form {
-            display: none;
+            display: none; /* skjuler søgeformularen på tablet */
         }
 
-
         main {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr; /* ændre layoutet til 2 koloner nu med mindre plads. Vi går altså fra 2fr+2fr=4fr i alt til 1fr+1fr=2fr i alt. */
         }
 
         /* RSB */
@@ -279,7 +285,7 @@ background-color: #c3c3c3;
             margin: 2rem 1rem;
         }
 
-
+        /* justering af tekststørrelsen i sektioner */
         .rsb-container h2 {
             font-size: 3.5rem;
             margin-left: 1.5rem;
@@ -288,6 +294,12 @@ background-color: #c3c3c3;
         .rsb-container p {
             font-size: 1rem;
             line-height: 1.5rem;
+        }
+
+        .f-a {
+            font-size: 1rem;
+            align-items: center;
+            width: 30%;
         }
 
         /* Koncerter */
@@ -305,17 +317,32 @@ background-color: #c3c3c3;
             font-size: 1rem;
         }
 
-        .koncerter button {
+        .koncerter a {
             font-size: 1.2rem;
             width: 6rem;
         }
          
+        
 }
     
-    
+/* breakpoint mellem 768px og 909px - her har jeg gjort så knapperne ikke overlappede hinanden i størrelsen imellem */
+@media screen and (min-width: 768px) and (max-width: 909px) {
+    .fa {
+        font-size: 1.25rem;
+        padding: 0.5rem;
+        border-radius: 25px;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+
+    .allebtn {
+        display: flex;
+        flex-wrap: wrap; /* knapperne kan rykkes ned på den næste linje når nødvendigt, altså når skærmen bliver lille nok */
+    }
+}
+
 /* MOBIL BREAKPOINT */
 @media (max-width: 768px) {
-
         .logo {
             display: none;
         }
@@ -324,10 +351,10 @@ background-color: #c3c3c3;
         }
 
         main {
-            grid-template-columns: 1fr; /* bliver til 1 column */
+            grid-template-columns: 1fr; /* layoutet bliver til en enkelt kolonne så vi opnår vores ønskede uddsende på mobil og så alt indhold kan passe */
         }
     
-        /* RSB */
+        /* RSB herunder ændre vi teksten og placering som gør at den passer til mobilen */
         .rsb-container {
             margin: 1rem;
         }
@@ -344,37 +371,47 @@ background-color: #c3c3c3;
             text-align: center;
         }
     
+        .f-a {
+
+            font-size: 1rem;
+            align-items: center;
+            width: 20vh;
+        }
+
         .allebtn {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
         }
+
     
         /* Koncerter */
         .annebox, .barylbox, .dragbox {
-            flex-direction: column;
-            align-items: center;
+            flex-direction: column; /* ændrer flexbox-layout til kolonne for mobil */
+            align-items: center; /* centrerer indholdet horisontalt */
             text-align: center;
             margin-bottom: 2rem;
         }
     
         .koncerter img {
-            width: 100%;
+            width: 100%; /* billederne tilpasses automatisk til skærmens bredde */
             max-width: 25rem;
         }
     
-        .billet-info {
-            display: none;
-        }
+        
     
         .anne-roemer h2, .baryl h2, .aarhus-drag h2 {
-            margin: 1rem 0;
+            margin: 1rem 0; /* skaber luft for teksten ved at top og bund margin = 1rem, imens at venstre og højre margin = 0 */
             text-align: center;
+        }
+
+        .koncerter a {
+            font-size: 1.2rem;
+            width: 6rem;
         }
     
         /* Undersider links */
         .crowdfunding-workshop, .fremtid {
-            margin: 1rem;
+            margin: 1rem; /* laver et mellemrum omkring de indsatte links for nemmere navigation */
         }
     
         /* nyhedsbrev */
@@ -395,11 +432,4 @@ background-color: #c3c3c3;
             justify-content: center;
             margin-left: 5rem;
         }
-}
-
-
-/* MEGET SMÅ MOBILER BREAKPOINT */
-@media (max-width: 480px) {
-
-
 }

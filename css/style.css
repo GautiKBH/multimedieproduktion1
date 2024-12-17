@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'DrukFont';
     src: url('/fonts/DrukWide-SuperItalic-Trial.woff') format('woff');
+    /* herover har jeg brugt @font-face til at få indsat min brugerdefineret font som jeg har downloaded.
+     Den fantes ikke på googlefonts så har selv indsat den her  */
 }
 
 
@@ -16,8 +18,8 @@
 body{
     background-image: url('/images/baggrund/baggrund1.webp');
     background-size: cover; /* billedet fylder hele skærmen */
-  background-position: center center; /* billedet bliver sat centralt */
-  background-repeat: no-repeat; /* gør så det ikke gentager sig */
+    background-position: center center; /* billedet bliver sat centralt */
+    background-repeat: no-repeat; /* gør så billedet det ikke gentager sig */
     margin: 0;
     padding: 0;
 }
@@ -25,34 +27,33 @@ body{
 
 header{
     background: black;
-    position: sticky;
-    top: 0;
+    position: sticky; /* gør så headeren er fastgjort øverst på siden når man scroller ned. */
+    top: 0; /* gør at headeren blier helt øverst */
     padding: 15px;
     display: block;
     align-items: center;
     justify-content: center;
     font-family: Impact;
-    min-height: 60px;
-    z-index: 1000;
+    min-height: 60px; /* headerens minimumshøjde */
+    z-index: 1000; /* holder headeren over alt andet indhold på siden når der scrolles. Gør det nemt at navigere rundt hvis man har scrollet ned */
 }
  
  header .navbar ul{
-    list-style: none;
+    list-style: none; /* fjerner punkterne på listen */
     padding: 0;
     margin: 0;
 }
  
  header .navbar ul li{
-    position: relative;
-    float: left;
+    position: relative; /* gør det muligt at indsætte dropdown-menuer */
+    float: left; /* placere menupunkterne ved siden for hinanden fra venstre */
 }
  
  header .navbar ul li a {
     text-decoration: none;
     font-size: 25px;
-    
     color: white;
-    display: block;
+    display: block; /* gør at hele området bliver klikbart */
     padding: 10px 75px;
 }
  
@@ -61,7 +62,7 @@ header{
 }
  
  header .navbar ul li ul{
-    position: absolute;
+    position: absolute; /* dropdown-menu bliver vist relativt til parent-elementet */
     width: 400px;
     display: none;
     z-index: 1000;
@@ -71,13 +72,9 @@ header{
  
  header .navbar ul li:focus-within > ul,
  header .navbar ul li:hover > ul{
-    display: block;
+    display: block; /* dropdown menuen bliver vist ved keyboardfokus eller ved hover med musen */
 }
  
-
-
-
-
 
 
 
@@ -90,19 +87,16 @@ header{
 }
 
 .banner-container .logo {
-    width: 8%; 
+    width: 8%; /* logoets bredde er 8% af containerens */
     height: auto;
     max-height: 6rem;
     max-width: 6rem;
     margin-left: 100px;
 }
 
-
-
-
-
-
-
+.banner-container .logo img {
+    width: 100%; /* billedet fylder hele logorammen */
+}
 
 
 
@@ -110,7 +104,7 @@ header{
 footer {
     background-color: black;
     color: white;
-    display: grid;
+    display: grid; /* bruger grid til at organisere elementerne i footeren */
     padding: 20px;
     justify-content: center;
     gap: 30px; 
@@ -137,7 +131,7 @@ footer {
 }
 
 .logo-container img { 
-    height: 100px;
+    height: 100px; /* gør at logoerne har ensartet højde */
 }
 
 .kontakt-info {
@@ -150,12 +144,12 @@ img[alt="Godsbanen"] {
 }
 
 #menu-toggle {
-    display: none;
+    display: none; /* skjuler menu toggle som standard */
 }
 
 .burger-menu {
-    display: none;
-    cursor: pointer;
+    display: none; /* skjult som standard */
+    cursor: pointer; /* gør menuen klikbar */
     position: absolute;
     right: 20px;
     top: 20px;
@@ -163,8 +157,8 @@ img[alt="Godsbanen"] {
     padding: 15px;
 }
 
-.burger-menu span {
-    display: block;
+.burger-menu span { 
+    display: block; /* hver streg/span vises som en block, de 3 danner vores menu bar som vi klikker på */
     width: 30px;
     height: 5px;
     background-color: white;
@@ -202,8 +196,8 @@ img[alt="Godsbanen"] {
     
         header .navbar ul li a {
             font-size: 25px;
-            padding: 10px 75px;
-            white-space: nowrap;
+            padding: 10px 75px; /* topen og bundens padding er altså 10px og venstre og højres er 75px */
+            white-space: nowrap; /* gør at indholdet ikke kan bryde til en ny linje */
         }
     
         header .navbar ul li ul {
@@ -212,9 +206,7 @@ img[alt="Godsbanen"] {
             background: black;
         }
 
-        
-
-    }
+         }
 
 
     /* TABLET BREAKPOINT */
@@ -240,8 +232,8 @@ img[alt="Godsbanen"] {
             display: block;
         }
         .navbar {
-            display: none;
-            position: fixed;
+            display: none; /* gør navbaren usynlig som standard */
+            position: fixed; /* fastlåser navbaren til toppen af skærmen */
             top: 0;
             left: 0;
             width: 100%;
@@ -255,7 +247,7 @@ img[alt="Godsbanen"] {
         }
     
         header .navbar ul li {
-            float: none;
+            float: none; 
             width: 100%;
         }
     
@@ -264,7 +256,8 @@ img[alt="Godsbanen"] {
             width: 100%;
             background: #6C38F0;
         }
-    
+
+        /* når menuen er aktiveret altså vores checkbox er checked, er navbaren synlig */
         #menu-toggle:checked ~ .navbar {
             display: block;
         }
@@ -299,7 +292,7 @@ img[alt="Godsbanen"] {
     }
     
     .logo-container {
-        gap: 20px; /* Mindre gap */
+        gap: 20px; /* mindre gap */
     }
     
     .logo-container img {
