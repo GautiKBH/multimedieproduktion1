@@ -30,6 +30,10 @@ h2 {
     width: 100%;
     overflow: hidden;
 }
+
+.stor {
+    font-weight: bold;
+}
   
 /* de usynlige tekstbokse */
 .text-box {
